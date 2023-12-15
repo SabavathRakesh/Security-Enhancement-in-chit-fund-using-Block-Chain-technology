@@ -1,0 +1,588 @@
+body {
+        background-color: #010f1a;
+}
+
+#background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+}
+
+nav {
+        width: 100%;
+        height: 10%;
+        background: transparent;
+}
+
+/* to keep navbar fixed at the top, use the navbar class below and change the margin of the row div according to the page  */
+.navbar {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        /* border-bottom: 3px solid #adadad; */
+        position: absolute;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        /* border: 1px solid rgba(255,255,255,0.5);
+        border-right: 1px solid Orgba(255,255,255,0.2); */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.navbar-nav {
+        /* background-color: #234e70; */
+        position: absolute;
+        right: 0.005rem;
+        padding-right: 2em;
+        z-index: 100;
+}
+
+.nav-link {
+        margin-left: 1.875rem;
+        font-size: 1.15rem;
+        color: #dd0aaf;
+}
+.nav-link .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: 10px;
+        font-size: 0.8rem;
+      }
+      
+.nav-link:hover .tooltiptext {
+        visibility: visible;
+      }
+
+.navbar-toggler {
+        background-color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+        max-width: 1000px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+
+}
+
+/* Slides */
+.image {
+        margin-top: 5%;
+        text-align: center;
+        display: inline-block;
+}
+
+/* Navigation arrows */
+.prev,
+.next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        -webkit-user-select: none;
+        user-select: none;
+        text-decoration: none;
+}
+
+.next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+}
+
+/* On hover */
+.prev:hover,
+.next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots container */
+.dots-container {
+        text-align: center;
+}
+
+/* The dots */
+.dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.active,
+.dot:hover {
+        background-color: #717171;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+
+        /* Navigation arrows */
+        .prev,
+        .next {
+                font-size: 12px;
+                padding: 8px;
+                margin-top: -16px;
+        }
+
+        /* The dots */
+        .dot {
+                height: 10px;
+                width: 10px;
+                margin: 0 3px;
+        }
+}
+
+
+/* btns     */
+.container1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+a {
+        text-decoration: underline;
+        color: black;
+        padding: 10px;
+}
+
+/* Card-Styles */
+.box {
+        position: relative;
+}
+
+.box .square {
+        position: absolute;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid Orgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+}
+
+.container {
+        margin-top: 8rem;
+        margin-bottom: 10px;
+        position: relative;
+        width: 45%;
+        min-height: 400px;
+        min-width: 300px;
+        background: rgba(17, 17, 17, 0.411);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+}
+
+.form h2 {
+        position: relative;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        Letter-spacing: 1px;
+        margin-bottom: 40px;
+}
+
+.form h2::before {
+        content: '';
+        top: 35px;
+        position: absolute;
+        Left: 0;
+        bottom: 10px;
+        width: 80px;
+        height: 4px;
+        background: white;
+}
+
+.form .inputBox {
+        width: 100%;
+        margin-top: 20px;
+}
+
+.form .inputBox1 {
+        width: 20%;
+        margin-top: 20px;
+}
+
+.form .inputBox input,
+.form .inputBox1 input {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 35px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        Letter-spacing: 1px;
+        color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form .inputBox input::placeholder,
+.form .inputBox1 input::placeholder {
+        color: white;
+}
+
+.row1 {
+        display: inline-flex;
+        margin-right: 20px;
+}
+
+.form .inputBox1 input[type="button"],
+.form .inputBox1 input[type="reset"],
+.form .inputBox1 input[type="submit"] {
+        background: black;
+        color: white;
+        min-width: 130px;
+        right: 20px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        font-weight: 600;
+        margin-right: 145px;
+}
+
+.form p {
+        color: white;
+}
+
+.form p span {
+        color: yellow;
+}
+
+.form p a {
+        color: rgb(200, 255, 0);
+}
+
+/* Logo */
+.image-container {
+        margin-top: 5%;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+}
+
+.logo {
+        transition: transform 0.5s ease;
+        width: 150px;
+        height: 150px;
+}
+
+.logo:hover {
+        transform: scale(1.2);
+}
+.card {
+        box-shadow: #adadad;
+        --bs-card-border-width: none;
+
+}
+
+.card a {
+        font-size: 1.2rem;
+}
+
+.card-header {
+        color: white;
+        padding: 15px 10px;
+        background-color: #dd0aaf;
+}
+
+.card-body {
+        font-size: large;
+}
+
+.card-footer {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+
+
+/* Form  */
+form {
+        margin-bottom: 0;
+}
+
+p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 20px
+}
+
+
+
+/*dropdown other activities */
+.dropbtn {
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 40px;
+        padding: 5px 20px;
+        margin: 20px 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+}
+
+.dropdown {
+        position: relative;
+        display: inline-block;
+}
+
+.dropdown-content {
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(250, 238, 240, 0.836);
+        padding: 6px 8px;
+        margin-top: 5px;
+        display: none;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.link :hover {
+        background-color: #c2fbd7;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+
+}
+
+.dropdown-content a {
+        color: black;
+        padding: 6px 6px;
+        text-decoration: none;
+        display: block;
+
+}
+
+.dropdown-content a:hover {
+        background-color: #c2fbd7;
+        border-radius: 50px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+}
+
+.dropdown:hover .dropdown-content {
+        display: block;
+        min-width: 150px;
+}
+
+/* footer stylings starts */
+.footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0%;
+        height: max-content;
+}
+
+.overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(105, 100, 100);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+}
+
+.footer:hover .overlay {
+        height: 100%;
+}
+
+.text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+/* footer stylings end  */
+
+
+/* CSS */
+.button-33 {
+        background-color: #c2fbd7;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        -webkit-user-select: none;
+        user-select: none;
+        touch-action: manipulation;
+}
+
+.button-33:hover {
+        box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+        transform: scale(1.05) rotate(-1deg);
+}
+
+/*  circle buttons */
+.circle-container {
+        position: relative;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        margin: 0;
+}
+
+.btns {
+        position: absolute;
+        text-align: end;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        color: rgb(255, 205, 174);
+        border: 3px solid rgb(255, 199, 153);
+}
+
+#center-btns {
+        color: black;
+}
+
+#btns3,
+#btns4,
+#btns5,
+#btns1,
+#btns2,
+#btns6 {
+        background-color: rgb(255, 128, 44);
+        text-align: center;
+        text-decoration: none;
+        padding: 20px 0 0 0;
+        cursor: pointer;
+}
+
+#btns3 {
+        background-color: rgb(255, 128, 44);
+        text-align: center;
+        padding: 30px 0 0 0;
+}
+
+#btns1,
+#btns2,
+#btns6 {
+        background-color: rgb(255, 128, 44);
+        text-align: center;
+        padding: 30px 0 0 0;
+}
+
+#btns1 :hover {
+        box-shadow: #18181a;
+        background-color: rgb(233, 63, 12);
+}
+
+.hide {
+        display: none;
+}
+
+.button-1 {
+
+        cursor: pointer;
+        background-color: #c2fbd7;
+        border: #000;
+        border-radius: 50px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+        color: green;
+        border: none;
+        text-align: center;
+        transition-duration: 0.4s;
+        overflow: hidden;
+        box-shadow: 0 5px 15px #193047;
+
+}
+
+.button-1:hover {
+        background: #fff;
+        box-shadow: 0px 2px 10px 5px #1abc9c;
+        color: #000;
+}
+
+.button-1:after {
+        content: "";
+        background: #1abc9c;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+}
+
+.button-1:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+}
+
+.button-1:focus {
+        outline: 0;
+}
