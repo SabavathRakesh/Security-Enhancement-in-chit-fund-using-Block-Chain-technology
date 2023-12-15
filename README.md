@@ -76,13 +76,9 @@ This project is licensed under the MIT License.
 ## Contact Information
 If you have any questions or suggestions related to the ChitFund Implementation, please feel free to contact:
 
-Name: Dasti Jaswanth Reddy
+Name: Sabavath Rakesh Naik
 
-Email: jaswanthreddydasti@gmail.com
-
-Linkedin: [linkedin.com/in/dastijr](https://www.linkedin.com/in/dastijr/)
-
-GitHub: [github.com/dastijaswanthreddy](https://github.com/dastijaswanthreddy)
+Email: srakeshnaik23@gmail.com
 
 Thank you for using ChitFund! We hope you find it useful and contribute to its growth. Happy Chitting!
 
